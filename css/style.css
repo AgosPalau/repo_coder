@@ -21,7 +21,7 @@
 .navbar-toggler{
     background-color: aliceblue;
 }
-.bg-violet{
+.bg-azul{
     background-color: #1E1E26;
 }
 
@@ -118,5 +118,16 @@ footer img:hover{
 @media ( max-width:574px){
 .text.p{
     font-size: 12px;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+}
+figure img{
+    width: 100%;
+}
+figcaption{
+    font-size: 45px;
+    padding-right: 20%;
 }
 }
