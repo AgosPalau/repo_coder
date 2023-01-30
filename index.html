@@ -1,121 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/2.png" type="icono pagina">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estudio Contable</title>
+    <!-- css BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- mi css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
-    <title>M & M - Asesoria Contable </title>
-
 </head>
-<body>
-<header>
-    <a href="index.html">
-        <img src="img/logo.jpg" alt="logo M&M">
-    </a>
-    <nav>
-        <ul class="ulIn">
-            <li>
-                <a href="index.html"> Inicio </a>
-            </li>          
-            <li>
-                <a href="pages/servicios_contables_e_impositivos.html"> Servicios contables e impositivos</a> 
-            </li>
-            <li> 
-                <a href="pages/sociedades.html"> Sociedades </a>
-            </li>
-            <li>
-                <a href="pages/certificaciones.html"> Certificaciones </a>
-            </li>
-            <li>
-                <a href="pages/gestion_monotributo.html"> Gestion de Monotributo</a>
-            </li>
-            <li> 
-                <a href="#contact"> Contactanos</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <div>
-        <img src="img/principal.jpg" alt="imagen contable" class="nav">
-        <h1> M&M - Asesoria Contable </h1>
-    </div>
-        <section class="secOne">
-            <div>
+  <body>
+    <!-- inicia nav -->
+    <nav class="navbar navbar-expand-md" id="botonera">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.jpg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/servicios_contables_e_impositivos.html">Servicios contables e impositivos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/sociedades.html">Sociedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/certificaciones.html">Certificaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/gestion_monotributo.html">Gestion de Monotributo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- ends nav -->
+    <!-- inicia carousel -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-            <br><br>
-            <div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/principal.jpg" class="d-block w-100" alt="imagen principal"id="img.cr">
+              </div>
+              <div class="carousel-item">
+                <img src="img/2.png" class="d-block w-100" alt="imagen secundaria-logo" id="img.cr">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+    <!-- ends carousel -->
+    <main>
+        <section class="container-fluid">
+            <h1 class="my-3 text-sm-center text-md-center text-lg-center">M&M Asesoria Contable</h1>
             <p>Somos un estudio compuesta por profesionales multidisciplinarios especializados en Consulting. Brindamos servicios de Asesoramiento, Desarrollo y Comercialización. Además, somos el único estudio contable especializado brindando soluciones a medida y adaptándonos a las necesidades de nuestros clientes.</p>
+            <!-- inicia sistema de grilla de Bs -->
+            <div class="row align-items:center">
+                <h2 class="my-3 text-sm-center text-md-center text-lg-center">NUESTROS CONTADORES</h2>
+                <article class="col-sm-3 col-md-3 col-lg-6 my-6">
+                    <div class="card">
+                        <img src="img/Mati.jpeg" class="card-img-top w-100" alt="contador Gonzalez">
+                        <div class="card-body">
+                          <h2 class="card-title">Dr Matias Gonzalez</h2>
+                          <p class="card-text">Contador egresado de Ciencias Economicas de la Universidad del Aconcagua en en el año 2021. Con distintos postgrados, uno de ellos es una "Diplomatura en estrategia financiera" y un "diplomado en mercado de capitales". Matias cuenta con especialización en Entidades con y sin fines de lucro.</p>
+                        </div>
+                      </div>
+                </article>
+                <!-- ends card I -->
+                <article class="col-sm-3 col-md-3 col-lg-6 my-6">
+                    <div class="card">
+                        <img src="img/tin.png" class="card-img-top w-100" alt="contador Huaihuas">
+                        <div class="card-body">
+                          <h2 class="card-title">Dr Martin Huaihuas</h2>
+                          <p class="card-text">Contador egresado de Ciencias Economicas de la Universidad Nacional de Cuyo en en el año 2020. Con distintos postgrados, uno de ellos es una "Diplomatura en estrategia financiera" y un "diplomado en mercado de capitales". Martin cuenta con especialización Mercado de capitales.</p>
+                        </div>
+                      </div>
+                </article>
             </div>
+            <!-- cierra row -->
         </section>
-        <br><br>
-        <h2>NUESTROS CONTADORES</h2>
-        <br><br>
-        <section class="secThree">
-            <figure class="mati">
-                <img src="img/Mati.jpeg" alt="drGonzalez">
-                <figcaption>Dr Matias Gonzalez</figcaption>
-                <p class="fig">Contador egresado de Ciencias Economicas de la Universidad del Aconcagua en en el año 2021. Con distintos postgrados, uno de ellos es una "Diplomatura en estrategia financiera" y un "diplomado en mercado de capitales". Matias cuenta con especialización en Entidades con y sin fines de lucro</p>
-            </figure>
-            <br><br>
-            <figure class="tincho">
-                <img src="img/Martin.jpg" alt="drGonzalez">
-                <figcaption>Dr Martin Huaihuas</figcaption>
-                <p class="fig">Contador egresado de Ciencias Economicas de la Universidad Nacional de Cuyo en en el año 2020. Con distintos postgrados, uno de ellos es una "Diplomatura en estrategia financiera" y un "diplomado en mercado de capitales". Martin cuenta con especialización Mercado de capitales </p>
-            </figure>
-        </section>
+        <!-- cierra container -->
 
-        <section id="contact">
-        <article class="formulario">
-            <h2 class="form_title"> CONTACTO </h2>
-            <br>
-            <form action="">
-            <div class="form_div">
-                <label for="Nombre"> Nombre y Apellido</label>
-                <input type="text" name="name" id="name">
+        <section class="bg-violet p-3 contact" id="contact">
+            <h3>Dejanos tu consulta</h3>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mi nombre es:">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Numero Telefonico</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="011 - 1112233">
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Deje su consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </form>
+                </article>
+                <!-- ends form -->
             </div>
-            <div class="form_div">
-                <label for="telefono"> Numero de telefono </label>
-                <input type="tel" name="phone" id="phone">
-            </div>
-            <div class="form_div">
-                <label for="Mail"> Mail </label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="form_div">
-                <label for="comentario"> Deje su mensaje </label>
-            </div>
-            <textarea name="" id="comentario" cols="30" rows="10"></textarea>
-            <div class="form_div">
-                <input type="submit" class="submit" value="Enviar" >
-            </div>
-            </form>
-        </article>
         </section>
     </main>
-
     <footer>
-        <article class="footerOne"> 
-        <h3>PODES ENCONTRARNOS:</h3>
-    <a href="https://www.facebook.com/" target="_blank">
-        <img src="img/iconos/facebook.png" alt="seguinos en facebook" class="icono">
-    </a>
-    <a href="https://www.google.com/intl/es/gmail/about/" target="_blank">
-        <img src="img/iconos/gmail.png" alt="escribinos por email" class="icono">
-    </a>
-    <a href="https://www.instagram.com/?__coig_restricted=1" target="_blank">
-        <img src="img/iconos/instagram.png" alt="seguinos en instagram" class="icono">
-    </a>
-        </article>
-        <article class="footerTwo">
-            <p>Copyright 2023. All Rights Reserved</p>
-        </article>
+        <article class=" bg-violet p-3 footerOne"> 
+            <h4>PODES ENCONTRARNOS:</h4>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="img/iconos/facebook.png" alt="seguinos en facebook" class="icono">
+        </a>
+        <a href="https://www.google.com/intl/es/gmail/about/" target="_blank">
+            <img src="img/iconos/gmail.png" alt="escribinos por email" class="icono">
+        </a>
+        <a href="https://www.instagram.com/?__coig_restricted=1" target="_blank">
+            <img src="img/iconos/instagram.png" alt="seguinos en instagram" class="icono">
+        </a>
+            </article>
     </footer>
-</body>
+
+
+    <!-- Js de Bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>
